@@ -1,0 +1,9 @@
+filter('ethernet', arp, 172.17.100.1, Output).
+
+filter(a, tcp/10, 182.17.10.1, Output).
+
+filter(a, udp/5, 172.172.100.11, Output).
+
+filter(b, icmp/2100, 12.17.100.19, Output).
+
+filter(p, tcp/65534, 172.17.100.1, Output).

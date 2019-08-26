@@ -9,7 +9,7 @@ populate_rule_list(Adapter_number_packet, Port_number_packet, Reject_list, Drop_
         (
             Reject_list = Reject_list1,
             Drop_list = Drop_list1)),
-    format('~w is reject. ~n~w is drop.', [Reject_list, Drop_list]).
+    % format('~w is reject. ~n~w is drop.', [Reject_list, Drop_list]).
 
 
 read_file(Stream, Adapter_number_packet, Port_number_packet, Reject_list, Drop_list, Status):-

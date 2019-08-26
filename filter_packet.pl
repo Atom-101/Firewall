@@ -1,15 +1,5 @@
 :-[input].
 
-ipv4_filter(Packet_ip,Reject_list,Drop_list,Status) :- 
-    member(Packet_ip,Reject_list)->Status = 'rejected';
-    ([Elem|_] = Drop_list, Elem == 'drop_all')-> Status = 'dropped';
-    member(Packet_ip,Drop_list)->Status ='dropped';
-    Status = 'accepted'.
-    %write(Status) 
-
-%tcp_udp_filter(Packet_port,)
-
-
 check_ranged(Elem):-
     name(Elem,ElemList),
     % 45 is ascii of '-'
